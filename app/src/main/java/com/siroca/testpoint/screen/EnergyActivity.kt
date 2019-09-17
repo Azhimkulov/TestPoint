@@ -187,7 +187,7 @@ class EnergyActivity : KodeinAppCompatActivity(), EnergyView, SensorEventListene
      * */
     override fun onPause() {
         super.onPause()
-        firstTime = false
+        firstTime = true
         spendSleepTimer.removeCallbacksAndMessages(null)
         spendingEnergyTimer?.removeCallbacksAndMessages(null)
         spendingEnergyTimer = null
