@@ -1,0 +1,12 @@
+apply plugin: 'kotlin'
+
+dependencies {
+    def domainDependencies = rootProject.ext.domainDependencies
+
+    implementation domainDependencies.rxKotlin
+    implementation domainDependencies.kotlin
+    implementation domainDependencies.rxAndroid
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"

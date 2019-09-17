@@ -1,0 +1,15 @@
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation project(':domain')
+
+    def presentationDependencies = rootProject.ext.domainDependencies
+
+    implementation presentationDependencies.kotlin
+    implementation presentationDependencies.rxKotlin
+    implementation presentationDependencies.retrofit
+    implementation presentationDependencies.retrofitConverter
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"

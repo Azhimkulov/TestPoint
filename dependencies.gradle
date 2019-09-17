@@ -1,0 +1,59 @@
+ext {
+
+    //Libraries
+    kotlinVersion = '1.1.3-2'
+    rxKotlinVersion = '2.1.0'
+    rxAndroidVersion = '2.0.1'
+    javaxAnnotationVersion = '1.0'
+    javaxInjectVersion = '1'
+    gsonVersion = '2.8.1'
+    okHttpVersion = '3.8.1'
+    androidAnnotationsVersion = '21.0.3'
+    retrofitVersion = '2.3.0'
+    roomVersion = '1.0.0-alpha6'
+    supportLibraryVersion = '28.0.0'
+    daggerVersion = '2.11'
+    sdkVersion = '28.0.0'
+    gradleVersion = '3.1.4'
+    roundedimageVersion = '2.3.0'
+    circleimageVersion = '2.2.0'
+    shadowLayoutVersion = '1.0.3'
+    kodein_version = '4.1.0'
+    play_version = '16.0.0'
+    permission_version = "1.0.a"
+    kodein_version = "4.1.0"
+    powerPrefVserion = "1.4.0"
+    seekBarVersion = "v3.0.0"
+
+    domainDependencies = [
+            javaxAnnotation:    "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            javaxInject:        "javax.inject:javax.inject:${javaxInjectVersion}",
+            rxKotlin:           "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}",
+            kotlin:             "org.jetbrains.kotlin:kotlin-stdlib-jre8:${kotlinVersion}",
+            daggerCompiler:     "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger:             "com.google.dagger:dagger:${daggerVersion}",
+            okHttp:             "com.squareup.okhttp3:okhttp:${okHttpVersion}",
+            okHttpLogger:       "com.squareup.okhttp3:logging-interceptor:${okHttpVersion}",
+            gson:               "com.google.code.gson:gson:${gsonVersion}",
+            rxAndroid:          "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            androidAnnotations: "com.android.support:support-annotations:${androidAnnotationsVersion}",
+            retrofit:           "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofitConverter:  "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            retrofitAdapter:    "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}",
+            supportDesign:      "com.android.support:design:${supportLibraryVersion}",
+            daggerSupport:      "com.google.dagger:dagger-android-support:${daggerVersion}",
+            daggerProcessor:    "com.google.dagger:dagger-android-processor:${daggerVersion}",
+            recyclerView:       "com.android.support:recyclerview-v7:${sdkVersion}",
+            dataBinding:        "com.android.databinding:compiler:${gradleVersion}",
+            roundedimageview:   "com.makeramen:roundedimageview:${roundedimageVersion}",
+            circleimageview:    "de.hdodenhof:circleimageview:${circleimageVersion}",
+            shadowLayout:       "com.github.dmytrodanylyk.shadow-layout:library:${shadowLayoutVersion}",
+            kodein:             "com.github.salomonbrys.kodein:kodein:${kodein_version}",
+            kodeinAndroid:      "com.github.salomonbrys.kodein:kodein-android:${kodein_version}",
+            googleMaps:         "com.google.android.gms:play-services-maps:${play_version}",
+            googleLocation:     "com.google.android.gms:play-services-location:${play_version}",
+            runtimePermission:  "com.romellfudi.permission:kotlin-fudi-permission:${permission_version}",
+            powerPref:          "com.aliassadi:power-preference-lib:${powerPrefVserion}",
+            rangeSeekBar:       "com.github.Jay-Goo:RangeSeekBar:${seekBarVersion}"
+    ]
+}
